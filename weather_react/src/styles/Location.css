@@ -1,0 +1,19 @@
+
+.weatherLocation {
+    margin-right:0px;overflow: hidden;
+    color: white;
+    font-size: 1.5em;
+    margin-top: 3vw;
+    position: relative;
+    margin-left: 1vw;
+  }
+  
+
+  .weatherLocation img {
+    width: 1em;
+    height: auto;
+    margin-right: 15px;
+
+
+  }
+  

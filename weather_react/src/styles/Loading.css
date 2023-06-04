@@ -1,0 +1,95 @@
+#wrapper {
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    display: flex;
+    font-size: 5vw;
+    color: white;
+  }
+  
+  #loading {
+    
+  }
+  
+  .dots {
+    visibility: hidden;
+  }
+  
+  #dot1 {
+    display: inline-block;
+    animation: loading1 4s infinite;
+  }
+  
+  #dot2 {
+    display: inline-block;
+    animation: loading2 4s infinite;
+  }
+  
+  #dot3 {
+    display: inline-block;
+    animation: loading3 4s infinite;
+  }
+  
+  
+  @keyframes loading1 {
+    0% {
+      visibility: hidden;
+    }
+    20% {
+      visibility: hidden;
+    }
+    40% {
+      visibility: visible;
+    }
+    60% {
+      visibility: visible;
+    }
+    80% {
+      visibility: visible;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+  
+  @keyframes loading2 {
+    0% {
+      visibility: hidden;
+    }
+    20% {
+      visibility: hidden;
+    }
+    40% {
+      visibility: hidden;
+    }
+    60% {
+      visibility: visible;
+    }
+    80% {
+      visibility: visible;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+  
+  @keyframes loading3 {
+    0% {
+      visibility: hidden;
+    }
+    20% {
+      visibility: hidden;
+    }
+    40% {
+      visibility: hidden;
+    }
+    60% {
+      visibility: hidden;
+    }
+    80% {
+      visibility: visible;
+    }
+    100% {
+      visibility: visible;
+    }
+  }

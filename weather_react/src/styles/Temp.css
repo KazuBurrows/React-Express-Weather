@@ -1,0 +1,17 @@
+
+
+.weatherTemp {
+    margin: 0;
+    color: white;
+    font-size: 12vw;
+    /* position: relative; */
+    /* margin-left:1vw; */
+    margin-left: 1vw;
+
+
+    background: -webkit-linear-gradient(180deg, rgba(255,255,255,1), rgba(255,255,255,0));
+      background: linear-gradient(180deg, rgba(255,255,255,1), rgba(255,255,255,.5));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }

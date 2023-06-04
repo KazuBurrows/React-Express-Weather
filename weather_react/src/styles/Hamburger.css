@@ -1,0 +1,208 @@
+
+#hamburger:hover{
+    cursor: pointer;
+
+}
+
+.line {
+    background-color: white;
+    display: block;
+    margin: 6% 0 0 auto;
+    border-radius: 50px;
+
+}
+
+.line1 {
+    width: 2vw;
+    height: .3vw;
+}
+
+.line2 {
+    width: 3vw;
+    height: .3vw;
+}
+
+
+#hamburger.active {
+    animation-name: hamburger-slide-out;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#hamburger.inactive {
+  animation-name: hamburger-slide-in;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes hamburger-slide-out {
+    0% {
+        transform: translateX(0);
+        
+    }
+    100% { 
+    /*     100vmax is 100% of screen width size */
+        transform: translateX(20vmax);
+        
+    }
+}
+
+@keyframes hamburger-slide-in {
+  0% {
+      transform: translateX(20vmax);
+      
+  }
+  100% { 
+  /*     100vmax is 100% of screen width size */
+      transform: translateX(0);
+      
+  }
+}
+
+
+/* ------------- Hamburger cross -------------- */
+
+
+
+  #hamburger-invert {
+    display: block;
+    margin-right: 2.2vw;
+    padding-bottom: 2vw;
+  }
+  
+  #hamburger-invert:hover {
+    cursor: pointer;
+  }
+  
+  
+  .line-invert {
+    background-color: white;
+    display: block;
+    border-radius: 50px;
+    width: 1.3vw;
+    height: .3vw;
+    position: absolute;
+  }
+  
+  .i-line1 {
+    transform: rotate(135deg);
+  }
+  
+  .i-line2 {
+    transform: rotate(-135deg);
+    margin-left: .72vw;
+  }
+  
+  
+  
+
+  #hamburger-invert.active {
+    animation-name: hamburger-i-fade-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  #hamburger-invert.inactive {
+    animation-name: hamburger-i-fade-out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes hamburger-i-fade-out {
+    0% {
+      opacity: 1;
+    }
+    99% {
+      opacity: 0.01;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes hamburger-i-fade-in {
+    0% {
+      opacity: 0;
+    }
+    1% {
+      opacity: 0.01;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+
+
+
+  .tablinks {
+    /* display: none; */
+    position: fixed;
+    right: 3vw;
+
+  }
+
+  .tablinks.active {
+    animation-name: hamburger-i-fade-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+
+  .tablinks.inactive {
+    animation-name: hamburger-i-fade-out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+
+
+
+  /* Style the tab */
+  .weatherTab {
+    font-size: 3vw;
+    position : absolute;
+    font-style: Verdana;
+
+    padding-left: 10px;
+    top: 3vw;
+    right: 3vw;
+
+  }
+
+  .tablinks button {
+    
+    all: unset;
+    background-color: white;
+    display: flex;
+    padding: 1vw 2vw;
+
+    margin-bottom: .1vw;
+  }
+
+  
+
+
+  
+  /* Change background color of buttons on hover */
+  .tablinks button:hover {
+    animation: bounce 0.5s forwards; 
+    color:rgb(255, 255, 255);
+  }
+  
+  /* Create an active/current tablink class */
+  .tablinks button {
+    animation: active-button 0s forwards;
+    
+  }
+  
+  
+  @keyframes active-button {
+    100% { color: rgb(0, 0, 0); }  
+  }
+
+  @keyframes bounce { 
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+    40% {transform: translateX(-30px);} 
+    60% {transform: translateX(-15px);} 
+  }

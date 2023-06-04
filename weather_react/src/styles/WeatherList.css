@@ -1,0 +1,102 @@
+
+#WeatherListWrapper {
+  font-family: Verdana;
+  font-size: 2vw;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0px;
+
+  border-radius: 60px 60px 0 0;
+  background: radial-gradient(circle at 50% -5000%, white 10%, rgba(0,0,0,00) 98%, rgba(255, 255, 255, 0.9) 40%);
+}
+
+
+
+
+
+
+
+
+#weather-table {
+  /* display: table; */
+
+  padding-top: 3vw;
+  padding-bottom: 2vw;
+  text-align: center;
+  width: 100%;
+
+}
+
+
+.weather-cells {
+  /* display: table-header-group; */
+  display: inline-block;
+  position: inherit;
+  margin-right: 2%; 
+  margin-left:2%;
+  /* padding-right:2%;
+  padding-left:2%; */
+}
+
+
+.table-header-cell{
+  font-size: larger;
+  font-weight: bolder;
+  
+}
+
+
+/* #weather-table-body{
+  display: table-row-group;
+  
+} */
+
+
+.table-body-cell{
+  /* display: table-cell; */
+  /* display: inline-block; */
+}
+
+
+
+
+
+
+
+.weather-title {
+  text-align: center;
+  font-size: 3vw;
+  padding-top: 30px;
+  /* text-transform: uppercase; */
+}
+
+.weather-title:first-letter {
+  text-transform: uppercase;
+}
+
+
+.weather_icon {
+  width: 4vw;
+}
+
+
+
+
+
+.weather-cells.today.active {
+  display: none;
+}
+
+.weather-cells.today.inactive {
+  display: inline-block;
+}
+
+.weather-cells.week.active {
+  display: none;
+}
+
+.weather-cells.week.inactive {
+  display: inline-block;
+}

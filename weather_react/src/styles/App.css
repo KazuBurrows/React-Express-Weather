@@ -1,0 +1,30 @@
+/* https://dribbble.com/shots/17996688-Weather-App */
+/* https://www.iconfinder.com/weather-icons?price=free */
+
+
+body {
+  font-family: Verdana;
+  /* background-image: url("/backgrounds/image1.jpg"); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom; 
+  background-color: #caf0f8;
+  width:100%;
+  padding:0;
+  margin:0;
+  /* visibility: hidden; */
+  
+  /* size: 0cap; */
+
+  overflow-x: hidden;
+}
+
+
+
+
+
+
+
+
+
+
